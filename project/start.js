@@ -17,10 +17,10 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
-app.get('/about', function(request, response) {
+app.get('./about', function(request, response) {
   response.render('pages/about');
 });
-app.get('/projects', function(request, response) {
+app.get('./projects', function(request, response) {
   response.render('pages/projects');
 });
 //binds the app to a port on your machine and sends a message to your console
