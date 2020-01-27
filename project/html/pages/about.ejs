@@ -9,15 +9,20 @@
   <div class="page-header">
     <% include ../helpers/navbar %>
   
-    <h1>About</h1>
+    <h1>Database Web App</h1>
   </div>
-
-  <p>Click on the button for a surprise.</p>
-
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
-
-  <div id="image"></div>
   
+  <button onClick ='handleSignIn()'>Sign In</button>
+
+<form onSubmit='handleMessageFormSubmit()' action='#'>
+  Title:<br>
+<input id='post-title'><br>
+Body:<br>
+<textarea id ='post-body'></textarea><br>
+<button>Submit</button>
+</form>
+  <div id="post-listing"></div>
+
 </body>
 
 </html>
